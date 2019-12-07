@@ -22,13 +22,18 @@ import libsqnce # libsqnce.py
 #######################################################
 def option(usr_option):
   if (usr_option == "1"):
-    term_1 = input("What's the first term in the sequence? ")
-    term_2 = input("What's the second term in the sequence? ")
-    term_3 = input("What's the third term in the sequence? ")
-    term_4 = input("What's the forth term in the sequence? ")
+    term_1_str = input("What's the first term in the sequence? ")
+    term_2_str = input("What's the second term in the sequence? ")
+    term_3_str = input("What's the third term in the sequence? ")
+    term_4_str = input("What's the forth term in the sequence? ")
+
+    term_1 = int(term_1_str)
+    term_2 = int(term_2_str)
+    term_3 = int(term_3_str)
+    term_4 = int(term_4_str)
 
     # Calculate the common difference
-    common_difference(term_1, term_2, term_3, term_4)
+    libsqnce.common_difference(term_1, term_2, term_3, term_4)
 
   else:
     print("Error: Unrecognized option: " + usr_option)
