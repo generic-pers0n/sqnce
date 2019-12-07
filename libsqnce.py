@@ -32,5 +32,4 @@ def common_difference(term_1, term_2, term_3, term_4):
     # If term 1 is equal to term 2, then break
     if (term_1 == term_2):
       break
-
-    print("The common difference is " + common_diff)
+      print("The common difference is ", common_diff)
