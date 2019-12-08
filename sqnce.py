@@ -46,6 +46,9 @@ def option(usr_option):
     # Calculate the common difference
     libsqnce.common_difference(term_1, term_2, term_3, term_4)
 
+  elif (usr_option == "clear"):
+    clear()
+
   else:
     print("Unrecognized option: " + usr_option)
     main_screen(False)
