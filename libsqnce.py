@@ -19,13 +19,13 @@ from sys import argv
 
 # term_1 = -9, term_2 = -5
 def common_difference(term_1, term_2, term_3, term_4):
-  common_diff = 0
+  common_diff = 0 # Common difference
 
   term_1_inc = term_1
 
   # We know that term 1 and term 2 will not have the same value,
   # so we need to increment the diff
-  while (term_1_inc != term_2 + 1):
+  while (term_1_inc != term_2):
     common_diff += 1 # Increment common_diff
     term_1_inc += 1
 
