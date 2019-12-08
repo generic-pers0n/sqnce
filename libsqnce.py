@@ -16,8 +16,14 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from sys import argv
+import os
 
-# term_1 = -9, term_2 = -5
+def clear():
+  if (os.name == "posix"):
+    os.system("clear")
+  elif (os.name == "nt"):
+    os.system("cls")
+
 def common_difference(term_1, term_2, term_3, term_4):
   common_diff = 0 # Common difference
 
