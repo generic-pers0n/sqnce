@@ -19,7 +19,18 @@
 from sys import argv
 import libsqnce # libsqnce.py
 
-#######################################################
+def main_screen(first_run):
+  if (first_run == True):
+    print("=================================\n")
+    print("Welcome to sqnce!\n")
+    print("=================================\n")
+
+  print("Select an option below:\n\n")
+  print("(1) Calculate the common difference")
+  usr_option = input(">> ")
+  option(usr_option)
+
+
 def option(usr_option):
   if (usr_option == "1"):
     term_1_str = input("What's the first term in the sequence? ")
@@ -36,21 +47,8 @@ def option(usr_option):
     libsqnce.common_difference(term_1, term_2, term_3, term_4)
 
   else:
-    print("Error: Unrecognized option: " + usr_option)
-#######################################################
+    print("Unrecognized option: " + usr_option)
+    main_screen(False)
 
-#######################################################
-def main_screen(first_run):
-  if (first_run == "true"):
-    print("=================================\n")
-    print("Welcome to sqnce!\n")
-    print("=================================\n")
-
-  print("Select an option below:\n\n")
-  print("(1) Calculate the common difference")
-  usr_option = input(">> ")
-  option(usr_option)
-#######################################################
-
-main_screen("true")
+main_screen(True)
 
