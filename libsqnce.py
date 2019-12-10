@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-# Copyright (C) 2019 Mario Alcaraz, Avery King <avery98@pm.me>, and contributors
+# Copyright (C) 2019 Mario Alcaraz <captainamario2006@gmail.com>, Avery King <avery98@pm.me>, and contributors
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
